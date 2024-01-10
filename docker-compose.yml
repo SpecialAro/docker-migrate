@@ -4,6 +4,8 @@ services:
   docker-migrate:
     image: teste
     # SOURCE
+    ports:
+      - 8722:22
     environment:
       - PASSWORD=s3cR3t
     volumes:
